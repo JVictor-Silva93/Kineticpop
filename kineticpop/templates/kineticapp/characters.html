@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+{% extends "kineticapp/base_album.html" %}
+    {% block body_block %}
+
+
+<main>
+
+  <!-- INTRO TO ALBUM/INFO ABOUT PAGE -->
+  
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Character Design Album</h1>
+            <hr>
+            <p class="lead text-muted">From company work to freelance gigs to drawing for fun, this album includes all drawings done related to character design. 
+              There is a lot that goes on when creating a charcter, here is where imagination and references are key. 
+            </p>
+            <p>
+              <a href="{% url 'kineticapp:illustrations' %}" class="btn btn-secondary my-2">To the illustrations page</a>
+              <a href="{% url 'kineticapp:graphics' %}" class="btn btn-secondary my-2">To the graphics design page</a>
+            </p>
+            <hr>
+          </div>
+        </div>
+      </section>
+    
+  <!-- Thumbnails BELOW -->
+  <!-- COMMENTED OUT ARE THE ADDITIONAL BUTTONS FOR THE THUMBNAIL -->
+  <!-- NEED TO FIND A WAY FOR ALEX TO UPLOAD ILLUSTRATIONS ON HIS OWN -->
+  
+<div class="container bg-light">
+
+
+  <div class="row">
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/818/151/medium/alex-porcayo-homer-post.jpg?1621398838" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/818/130/medium/alex-porcayo-tikis-ballpython.jpg?1621398787" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/818/141/medium/alex-porcayo-bearded-dragon.jpg?1621398815" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/818/136/medium/alex-porcayo-tikis-tegu-recovered-v2.jpg?1621398799" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/818/148/medium/alex-porcayo-goku-gecko.jpg?1621398821" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/818/158/medium/alex-porcayo-yoda-graminea.jpg?1621398850" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/817/755/medium/alex-porcayo-187735356-146939737345631-6315713586860394408-n.jpg?1621397345" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/817/756/medium/alex-porcayo-bumi-catthief.jpg?1621397350" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/817/753/medium/alex-porcayo-187065830-187425999810855-218021805997180565-n.jpg?1621397340" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/817/757/medium/alex-porcayo-sugar-mulk-logo.jpg?1621397354" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/817/395/medium/alex-porcayo-merideth-charlie.jpg?1621396420" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/031/189/204/medium/alex-porcayo-montigo-update.jpg?1602858434" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/031/187/335/medium/alex-porcayo-rangergirl.jpg?1602853885" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/008/326/653/medium/alex-porcayo-luckyzacat.jpg?1512022972" alt="Responsive image"></div>
+      <!-- <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="" alt="Responsive image"></div> -->
+  </div>
+</div>
+
+<br><br><br><br>
+  
+</main>
+
+
+{% endblock %}

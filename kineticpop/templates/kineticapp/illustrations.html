@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% extends "kineticapp/base_album.html" %}
+    {% block body_block %}
+
+
+<main>
+
+  <!-- INTRO TO ALBUM/INFO ABOUT PAGE -->
+  
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Illustrations Album</h1>
+            <hr>
+            <p class="lead text-muted">The illustrations Album is art mostly done for fun though some have been a part of work projects. 
+              One of the biggest projects have the goblins made for a boardgame.</p>
+            <p>
+              <a href="{% url 'kineticapp:graphics' %}" class="btn btn-secondary my-2">To the graphics design page</a>
+              <a href="{% url 'kineticapp:characters' %}" class="btn btn-secondary my-2">To the character design page</a>
+            </p>
+            <hr>
+          </div>
+        </div>
+      </section>
+    
+  <!-- Thumbnails BELOW -->
+  <!-- COMMENTED OUT ARE THE ADDITIONAL BUTTONS FOR THE THUMBNAIL -->
+  <!-- NEED TO FIND A WAY FOR ALEX TO UPLOAD ILLUSTRATIONS ON HIS OWN -->
+  
+  
+<div class="container bg-light">
+
+
+  <div class="row">
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/814/857/medium/alex-porcayo-battle-dental-final.jpg?1621387563" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/862/medium/alex-porcayo-battle-dentale.jpg?1621387576" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/816/384/medium/alex-porcayo-the-found-egg.jpg?1621392728" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/816/387/medium/alex-porcayo-beon-s-lair.jpg?1621392751" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/816/389/medium/alex-porcayo-the-lost-boulder.jpg?1621392760" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/816/390/medium/alex-porcayo-4th-illustration.jpg?1621392770" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/326/medium/alex-porcayo-battledentale-finalboard-v2-final.jpg?1621385142" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/434/medium/alex-porcayo-battledentale-finalboard-v2-upsidedown.jpg?1621385463" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/008/326/587/medium/alex-porcayo-gamabunta-8x11rsunadefin.jpg?1512022609" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/008/326/588/medium/alex-porcayo-gamabunta-8x11rsunade.jpg?1512022448" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/005/643/697/medium/alex-porcayo-roll-for-it.jpg?1492669169" alt="Responsive image"></div>
+      <!-- <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="" alt="Responsive image"></div> -->
+  </div>
+</div>
+
+<br><br><br><br>
+  
+</main>
+
+
+{% endblock %}

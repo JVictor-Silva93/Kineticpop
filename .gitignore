@@ -1,0 +1,6 @@
+/env
+.vscode
+kineticpop/kineticpop/settings.py
+kineticpop/kineticpop/__pycache__
+kineticpop/kineticapp/__pycache__
+kineticpop/db.sqlite3

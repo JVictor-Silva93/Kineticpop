@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+{% extends "kineticapp/base_album.html" %}
+    {% block body_block %}
+
+    {% load static %}
+<main>
+
+<!-- INTRO TO ALBUM/INFO ABOUT PAGE -->
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Graphic Design Album</h1>
+          <hr>
+          <p class="lead text-muted">Being a part of a toy factory's graphic design team is no joke. 
+            These years have been tough, my beard has grown long and and thick, and the bags under my eyes have darkened. 
+            Fortunately, my graphic design skills have grown tremendously. 
+            Check out below some of my graphic design work.</p>
+          <p>
+            <a href="{% url 'kineticapp:illustrations' %}" class="btn btn-secondary my-2">To the illustrations page</a>
+            <a href="{% url 'kineticapp:characters' %}" class="btn btn-secondary my-2">To the character design page</a>
+          </p>
+          <hr>
+        </div>
+      </div>
+    </section>
+    
+  
+<!-- Thumbnails BELOW -->
+<!-- COMMENTED OUT ARE THE ADDITIONAL BUTTONS FOR THE THUMBNAIL -->
+<!-- NEED TO FIND A WAY FOR ALEX TO UPLOAD ILLUSTRATIONS ON HIS OWN -->
+
+<div class="container bg-light">
+
+
+  <div class="row">
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/630/medium/alex-porcayo-f83a845e-cc2a-4a7b-ba5d-27b50148567e-rw-1200.jpg?1621430762" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/618/medium/alex-porcayo-aab329f4-efff-4b25-887e-88616bc2f304-rw-1200.jpg?1621430747" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/621/medium/alex-porcayo-03c34b27-1eca-4a54-a2d6-1a651b59b67d-rw-1200.jpg?1621430751" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/548/medium/alex-porcayo-60b10105-a449-42e9-8dca-27189947de02-rw-1920.jpg?1621430561" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/550/medium/alex-porcayo-80a02602-2355-437e-a6a4-25516ffeca5d-rw-1920.jpg?1621430568" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/496/medium/alex-porcayo-7179425dc20ba5a3f448b47c7287e1eb.jpg?1621430438" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/499/medium/alex-porcayo-93c180b5a0be171c118ed7634aca742a.jpg?1621430443" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/500/medium/alex-porcayo-58b0d68ab3f9a837ea43bdd4eaab19bd.jpg?1621430447" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/435/medium/alex-porcayo-430bd3bcedccc86456b3ecdb1aab20c9.jpg?1621430316" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/441/medium/alex-porcayo-a379458b8337c8e387e36cb5ee529c24.jpg?1621430325" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/247/medium/alex-porcayo-866d2815394ab6c8980d594651ddf729.jpg?1621429990" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/829/244/medium/alex-porcayo-ee3470cf707b07c7624281c47b2b4d4a.jpg?1621429983" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/253/medium/alex-porcayo-08c7f454055755f2baf3cd03c0acae80.jpg?1621429997" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/829/257/medium/alex-porcayo-f9c7ca1f531c1f02d1c3be10d039401b.jpg?1621430005" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/828/799/medium/alex-porcayo-bd3380d0865c22e93b0ff9e874d0b771.jpg?1621429131" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/828/820/medium/alex-porcayo-87c7d7d0026efbb24042a2b0b62cde95.jpg?1621429167" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/828/817/medium/alex-porcayo-af59da809ea835767f44367e2a2dab4e.jpg?1621429162" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/828/814/medium/alex-porcayo-6cad0718a38a0b5cba9ab6d56ab8c154.jpg?1621429152" alt="Responsive image"></div>
+      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/828/700/medium/alex-porcayo-728bfd062e7c5d30bc3f4d75c4ae50b4.jpg?1621428979" alt="Responsive image"></div>
+      <!-- <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="" alt="Responsive image"></div> -->
+  </div>
+</div>
+
+<br><br><br><br>
+
+</main>
+
+
+{% endblock %}

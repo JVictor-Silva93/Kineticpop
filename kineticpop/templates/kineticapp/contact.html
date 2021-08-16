@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+{% extends "kineticapp/base_album.html" %}
+    {% block body_block %}
+    {% load static %}
+    <br><br>
+    
+
+  <div class="container p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold text-center">Contact Alex</h1>
+      <p class="fs-4" style="text-align: center;">Alex is currently on several social media platforms, and may be contacted via these platforms.
+        You may also submit your information below, and Alex will contact you as soon as possible. 
+        Feel free to inquire about possible work request or if you would just like to leave Alex some encouragement!</p>
+        <div class="container text-center">
+        <a href="https://www.facebook.com/kineticpop/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://twitter.com/kineticpopart" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://www.instagram.com/kineticpop/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://www.twitch.tv/kineticpop" class="fa fa-twitch" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://www.linkedin.com/in/alex-porcayo-1309a9178" class="fa fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="container max width bg-light">
+      <!-- form action="" with a blank action tells the browser to submit the form back to the same URL -->
+      <form class="row row-cols-lg-auto g-3 align-items-center" method="POST">
+        <!-- csrf is the required security measures of django for a form -->
+        {% csrf_token %}
+        
+          <div class="col-12">
+            <label class="visually-hidden" for="full name">Name</label>
+            <div class="input-group">
+              <div class="input-group-text">Full Name</div>
+              <input type="text" class="form-control" id="full_name" name="full_name" placeholder="First and Last (Required)" required minlength="4" maxlength="70">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="visually-hidden" for="email">Email</label>
+            <div class="input-group">
+              <div class="input-group-text">Email</div>
+              <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com (Required)" required minlength="4" maxlength="70">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="visually-hidden" for="comments">Comments</label>
+            <div class="input-group">
+              <div class="input-group-text">Comments</div>
+              <input type="text" class="form-control" id="comments" name="comments" placeholder="Comments" maxlength="100">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" value="Submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+
+  </div>
+
+  <br><br>
+
+  <div class="container p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h2 class="display-5 fw-bold text-center">Donate</h2>
+      <p class="fs-4" style="text-align: center;">If you would like to support this up and coming artist, consider supporting via his <a href="https://ko-fi.com/kineticpopart" target="_blank" rel="noopener noreferrer">Ko-fi</a> link.
+        All donations are highly appreciated!</p>
+    </div>
+  </div>
+
+
+
+{% endblock %}

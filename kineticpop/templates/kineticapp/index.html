@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+{% extends "kineticapp/base.html" %}
+    {% block body_block %}
+        
+        <br><br><br>    
+        <h1>Welcome to all things Alex.</h1>
+        <br>
+        <p>Home to one of South Florida's art and design creator. Currently the asset coordinator at Basic Fun! In addition to having the artistic trait passed down from his father, 
+          Alex has spent years honing his artistic abilities. If you are here and would like to hire Alex for some freelance work, please visit the contact page. 
+          Or, if you are just visiting feel free to look around. If you would like to support Alex, please visit our support page.</p>
+        <br><br>  
+
+      <div class="album py-5 bg-dark rounded">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+              
+              <div class="col">
+                <div class="card bg-dark rounded-circle">
+                  <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg> -->
+                  <a href="{% url 'kineticapp:graphics' %}">
+                  <img src="https://cdna.artstation.com/p/assets/images/images/037/829/548/large/alex-porcayo-60b10105-a449-42e9-8dca-27189947de02-rw-1920.jpg?1621430561" class="bd-placeholder-img card-img-top rounded-circle" max-width="200" max-height="415">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h4 class="text-center"><a href="{% url 'kineticapp:graphics' %}" class="text-white">Graphics Design</a></h4>
+                  <div>
+                    <p class="d-flex justify-content-between align-items-center">
+                        Brand equity audit Strategic direction Competitive review Audience analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card bg-dark rounded-circle">
+                  <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg> -->
+                  <a href="{% url 'kineticapp:illustrations' %}">
+                  <img src="https://cdnb.artstation.com/p/assets/images/images/037/814/857/large/alex-porcayo-battle-dental-final.jpg?1621387563" class="bd-placeholder-img card-img-top rounded-circle" max-width="200" max-height="415">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h4 class="text-center"><a href="{% url 'kineticapp:illustrations' %}" class="text-white">Illustration Pieces</a></h4>
+                  <div>
+                    <p class="d-flex justify-content-between align-items-center">
+                        Brand equity audit Strategic direction Competitive review Audience analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card bg-dark rounded-circle">
+                  <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg> -->
+                  <a href="{% url 'kineticapp:characters' %}">
+                  <img src="https://cdnb.artstation.com/p/assets/images/images/037/817/753/large/alex-porcayo-187065830-187425999810855-218021805997180565-n.jpg?1621397340" class="bd-placeholder-img card-img-top rounded-circle" max-width="200" max-height="415">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h4 class="text-center"><a href="{% url 'kineticapp:characters' %}" class="text-white">Character Design</a></h4>
+                  <div>
+                    <p class="d-flex justify-content-between align-items-center">
+                        Brand equity audit Strategic direction Competitive review Audience analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+
+
+      
+
+    {% endblock %}
