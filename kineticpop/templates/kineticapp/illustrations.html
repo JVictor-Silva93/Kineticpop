@@ -24,27 +24,26 @@
         </div>
       </section>
     
-  <!-- Thumbnails BELOW -->
-  <!-- COMMENTED OUT ARE THE ADDITIONAL BUTTONS FOR THE THUMBNAIL -->
-  <!-- NEED TO FIND A WAY FOR ALEX TO UPLOAD ILLUSTRATIONS ON HIS OWN -->
+<!-- the for loop allows for the thumbnails to loop through uploaded images from the admin page. 
+  this will connect to the images in each respective folder. 
+      The src is image.url in order to display the image in the webpage. This is connected to the urls.py in the project. -->
   
   
 <div class="container bg-light">
 
 
   <div class="row">
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/814/857/medium/alex-porcayo-battle-dental-final.jpg?1621387563" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/862/medium/alex-porcayo-battle-dentale.jpg?1621387576" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/816/384/medium/alex-porcayo-the-found-egg.jpg?1621392728" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/816/387/medium/alex-porcayo-beon-s-lair.jpg?1621392751" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/037/816/389/medium/alex-porcayo-the-lost-boulder.jpg?1621392760" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/816/390/medium/alex-porcayo-4th-illustration.jpg?1621392770" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/326/medium/alex-porcayo-battledentale-finalboard-v2-final.jpg?1621385142" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/037/814/434/medium/alex-porcayo-battledentale-finalboard-v2-upsidedown.jpg?1621385463" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/008/326/587/medium/alex-porcayo-gamabunta-8x11rsunadefin.jpg?1512022609" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdna.artstation.com/p/assets/images/images/008/326/588/medium/alex-porcayo-gamabunta-8x11rsunade.jpg?1512022448" alt="Responsive image"></div>
-      <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="https://cdnb.artstation.com/p/assets/images/images/005/643/697/medium/alex-porcayo-roll-for-it.jpg?1492669169" alt="Responsive image"></div>
-      <!-- <div class="col-lg-4 col-sm-6 img-thumbnail"><img class="img-fluid" src="" alt="Responsive image"></div> -->
+
+    {% for illustration in illustrations %}
+
+      <div class="col-lg-4 col-sm-6 img-thumbnail">
+        <img class="img-fluid" src="{{illustration.image.url}}" alt="Illustrations">
+      </div>
+      
+    {% empty %}
+      <h3>Nothing to see here...</h3>
+    {% endfor %}
+
   </div>
 </div>
 

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import ContactForm
+from .models import Characters, Graphics, Illustrations
 
 # Create your views here.
 
@@ -27,11 +28,19 @@ def contact(request):
 def success(request):
     return render(request, "kineticapp/success.html")
 
+# create a objects.all() to obtain all the objects uploaded to each model/admin section (i.e. - Characters, Illustrations, Graphics)
+# context allows you to plugin to the return render
 def graphics(request):
-    return render(request, "kineticapp/graphics.html")
+    graphics = Graphics.objects.all()
+    context = {'graphics': graphics}
+    return render(request, "kineticapp/graphics.html", context)
 
 def illustrations(request):
-    return render(request, "kineticapp/illustrations.html")
+    illustrations = Illustrations.objects.all()
+    context = {'illustrations': illustrations}
+    return render(request, "kineticapp/illustrations.html", context)
 
 def characters(request):
-    return render(request, "kineticapp/characters.html")
+    characters = Characters.objects.all()
+    context = {'characters': characters}
+    return render(request, "kineticapp/characters.html", context)

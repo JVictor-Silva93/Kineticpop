@@ -19,9 +19,17 @@ from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 from kineticapp import views
 
+# import settings in order to create the static/media URLs
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('kineticapp/', include('kineticapp.urls')),
     path('admin/', admin.site.urls),
     path('alex_favicon.svg', RedirectView.as_view(url=staticfiles_storage.url('alex_favicon.svg')),),
 ]
+
+# this is done in conjunction with file.images.url in the html in order for it to display images on each page
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
